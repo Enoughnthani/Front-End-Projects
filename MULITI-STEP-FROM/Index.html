@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI-STEP-FORM</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <div class="MyContainer">
+        <span class="deco"></span>
+         <h1>Signup Form</h1>
+         
+         <div class="Progress">
+             <div id="ProgressBar"><div id="Step"></div></div>
+             
+             <div><h1>Name</h1><h1 id="line" name="First">1</h1></div>
+             <div><h1>Contact</h1><h1 id="line">2</h1></div>
+             <div><h1>Identity</h1><h1 id="line">3</h1></div>
+             <div><h1>Submit</h1><h1 id="line">4</h1></div>
+         </div>
+       
+
+            
+         <form id="Form1" onsubmit="return false" target="_blank">  
+            <h2>Basic info:</h2>
+
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name" pattern="[a-zA-Z0-9]{3,}" required></input>
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name" required pattern="[a-zA-Z0-9]{3,}"></input>
+           
+            <div class="BtnBox">
+              <input type="submit" id="Next1" value="NEXT"></input>
+            </div>
+        </form> 
+
+        <form id="Form2" onsubmit="return false" target="_blank"> 
+            <h2>Contact info:</h2>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" required ></input>
+            <label for="Contact Number">Contact No.</label>
+            <input type="text"required pattern="[0]{1,}[0-9]{9,}" name="Contact Number" oninvalid="this.setCustomValidity('Invalid phone number!')" maxlength="10" oninput="setCustomValidity('')"></input>
+
+           
+            <div class="BtnBox">
+                <input type="button" id="Back1" value="BACK"></input>
+                <input type="submit" id="Next2" value="NEXT"></input>
+              </div>
+        </form>
+
+        
+        <form id="Form3" onsubmit="return false" target="_blank">        
+            <h2>Identity info:</h2>
+
+            <label for="Date of Birth">Date of Birth</label>
+            <input type="date" name="Date of Birth" required></input>
+            <label for="Gender">Gender</label>
+            <select name="Gender" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+           
+            <div class="BtnBox">
+                <input type="button" id="Back2" value="BACK"></input>
+                <input type="submit" id="Next3" value="NEXT"></input>
+              </div>
+        </form>
+
+        <form id="Form4">        
+            <h2>Sign-up Details:</h2>
+
+            <label for="User Name">User Name</label>
+            <input type="text" name="User Name" required></input>
+            <label for="Password">Password</label>
+            <input type="password" name="Password"  required></input>
+           
+            <div class="BtnBox">
+                <input type="button" id="Back3" value="BACK"></input>
+                <input type="submit" id="submit" onclick="Notify()">
+              </div>
+        </form>
+    </div>
+
+    <div class="Success">
+        <p>You have successful signed-up, Thank you.</p>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
