@@ -1,0 +1,144 @@
+
+        html,body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url("bg.jpg");
+            background-attachment: fixed;
+            background-repeat:repeat ;
+            background-size: 100%,100%;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+        
+    .intro{
+        text-align: center;
+        color: rgb(126, 221, 82);
+        font-weight: bolder;
+        font-size: 42px;
+        text-shadow: 1px 5px 1px white;
+    }
+        
+        main {
+            margin: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .contactus{
+            background-color: rgb(53, 55, 50);
+            width: 100%;
+            height: 600px;
+            opacity: 90%;
+            color: white;
+        }
+
+        .contactus div{
+            display: flex;
+            padding: 5px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contactus button{
+            background-color: rgb(138, 200, 44);
+            margin-top: 10px;
+            width: 100px;
+            color: white;
+            height: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .contactus input{
+            width: 200px;
+            font-size: 16px;
+        }
+
+        .contactus textarea{
+            width: 400px;
+            height: 70px;
+            font-size: 18px;
+            resize: none;
+        }
+
+        
+        .bookpanel{
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            justify-content: space-around;
+            margin-top: 40px;
+            height: 1500px;
+            width: 100%;
+        }
+
+        .bookpanel a{
+            position: relative;
+            left: 0;
+            width: 150px;
+            height: 250px;
+        }
+
+        img{
+            position: relative;
+            left: 0;
+            width: 150px;
+            height: 250px;
+        }
+
+       .social{
+            justify-content: center;
+            height: 100px;
+            margin-top: 45px;
+        }
+
+        .social div{
+            flex-direction: row;
+            height: 35px;
+        }
+
+        .social img{
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+        }
+       
+        .search-form {
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .search-form input[type="text"] {
+            padding: 5px;
+            width: 300px;
+        }
+        
+        .search-form input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    
