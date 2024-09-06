@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI-STEP-FORM</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+
+<body onload="chooseACouser()">
+
+    <div class="main" id="up">
+        <div class="registration-container">
+            <h1>SmartEnroll online registration</h1>
+
+            <ul>
+                <a href="#up">home</a>
+                <a href="#down">about us</a>
+            </ul>
+        </div>
+
+        <div class="MyContainer">
+            <div id="Progress"></div>
+            <ul>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+            </ul>
+            <form id="Form1" onsubmit="return false">
+
+                <h1>PERSONAL DETAILS</h1>
+
+
+                <input type="text" placeholder="Name" required></input>
+                <input type="text" placeholder="Last Name" required></input>
+                <input id="id" type="text" placeholder="Id Number" required></input>
+                <input type="email" placeholder="Email" required></input>
+                <select required>
+                    <option selected hidden>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <input type="text" placeholder="Address" required></input>
+                <input id="no" type="text" placeholder="Phone Number" required></input>
+
+
+
+
+                <div class="BtnBox">
+                    <input type="submit" id="Next1" ; value="NEXT"></input>
+                </div>
+            </form>
+
+            <form id="Form2" onsubmit="return false">
+                <h1>ACADEMIC PROGRAM SELECTION</h1>
+
+                <select required name="DEPARTMENT" onclick="chooseACouser()">
+                    <option selected hidden>SELECT A DEPARTMENT</option>>
+                    <option>INFORMATION AND COMMUNICATION TECHNOLOGY</option>>
+                    <option>HUMANITIES</option>
+                    <option>ECONOMICS AND FINANCE</option>
+                </select>
+
+                <select required>
+                    <option selected hidden>SELECT A COURSE</option>
+                    <option name="course"></option>
+                    <option name="course"></option>
+                    <option name="course"></option>
+                    <option name="course"></option>
+                    <option name="course"></option>
+                </select>
+
+                <select required>
+                    <option selected hidden>PERIOD OF STUDY</option>>
+                    <option>1ST YEAR</option>>
+                    <option>2ND YEAR</option>
+                    <option>3RD YEAR</option>
+                </select>
+
+                <div class="BtnBox">
+                    <input type="button" id="Back1" value="BACK"></input>
+                    <input type="submit" id="Next2" value="NEXT"></input>
+                </div>
+            </form>
+
+
+            <form id="Form3">
+                <h1>REVIEW APPLICATION</h1>
+
+                <input readonly name="output" type="text" value="Name: "></input>
+                <input readonly name="output" type="text" value="Last Name: "></input>
+                <input readonly name="output" type="text" value="Id No: "></input>
+                <input readonly name="output" type="text" value="Email: "></input>
+                <input readonly name="output" type="text" value="Address: "></input>
+                <input readonly name="output" type="text" value="Phone Number: "></input>
+                <input readonly name="output" type="text" value="Gender: "></input>
+                <input readonly name="output" type="text" value="Fuculty: "></input>
+                <input readonly name="output" type="text" value="Course: "></input>
+                <input readonly name="output" type="text" value="Year of study: "></input>
+                <p>Please take a moment to double-check your registration details
+                    If everything looks good, click the submit button
+                </p>
+
+
+                <div class="BtnBox">
+                    <input type="button" id="Back2" value="BACK"></input>
+                    <input type="submit" id="submit" onclick="Notify()">
+                </div>
+            </form>
+        </div>
+
+        <div class="footer" id="down">
+            <h1>ABOUT US</h1>>
+            <p>"As new members of the ICT Department and first-year students, we are thrilled to present our project,
+                which serves as a gateway to the world of technology within our institution. Just like us, many students
+                are taking their first steps into the realm of ICT. With this project, we've created a user-friendly
+                website that simplifies the course enrollment process. Our aim is to make the ICT journey as smooth and
+                accessible as possible for newcomers. We understand the challenges of starting this exciting adventure,
+                and we're dedicated to ensuring that every first-year student has a seamless experience. This project
+                embodies more than just technology; it's our way of opening doors and offering support to our fellow
+                students as we explore the limitless possibilities of ICT together.</p>
+            <h1>CONTACT US</h1>>
+            <h1 id="ph">Contact Number: +27 AA XXX XXXX </h1>>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="facebook.jpg"></a></li>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><img src="whatsapp.jpg"></a></li>
+                <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><img src="twitter.jpg"></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
